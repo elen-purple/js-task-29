@@ -6,6 +6,6 @@ form.addEventListener("submit", (e) => {
   const value = Number.parseInt(input.value) * 1000;
   input.value = "";
   setTimeout(() => {
-    console.log(`It have gone ${value / 1000}s`);
+    console.log(`${value / 1000}s have gone `);
   }, Number.parseInt(value));
 });
