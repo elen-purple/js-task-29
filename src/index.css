@@ -1,0 +1,48 @@
+#box1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+#box1.active {
+  background-color: yellow;
+}
+#box2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+#box2.active {
+  width: 200px;
+}
+
+.board {
+  background-color: darkslategray;
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 50px;
+}
+
+.text {
+  position: absolute;
+  top: 12px;
+  color: white;
+  left: 100px;
+  z-index: 5;
+}
+.text:first-of-type{
+  left: 20px;
+}
+.target {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border: 2px solid darkgrey;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
